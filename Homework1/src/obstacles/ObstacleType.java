@@ -4,7 +4,12 @@ package obstacles;
  * Represents the different types of obstacles that can be on the map.
  */
 public enum ObstacleType {
-    GUARD("g", 'g');
+    GUARD("g", 'g'),
+    FENCE("f", 'f'),
+    SENSOR("s", 's'),
+    CAMERA("c", 'c'),
+    WALL("w", 'w'),
+    LASER("L", 'L');
 
     private final String argumentName;
     private final char symbol;
