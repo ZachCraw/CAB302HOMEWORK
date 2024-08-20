@@ -9,7 +9,8 @@ public enum ObstacleType {
     SENSOR("s", 's'),
     CAMERA("c", 'c'),
     WALL("w", 'w'),
-    LASER("L", 'L');
+    LASER("l", 'l'),
+    MINEFIELD("m", 'm');
 
     private final String argumentName;
     private final char symbol;

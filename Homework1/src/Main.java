@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import common.*;
+import common.Location;
 import obstacles.*;
 
 class Main {
@@ -72,6 +73,9 @@ class Main {
                     case FENCE -> Fence.parse(cleanedArg);
                     case SENSOR -> Sensor.parse(cleanedArg);
                     case CAMERA -> Camera.parse(cleanedArg);
+                    case WALL -> Wall.parse(cleanedArg);
+                    case LASER -> Laser.parse(cleanedArg);
+                    case MINEFIELD -> Minefield.parse(cleanedArg);
                 };
                 obstacles.add(obstacle);
             }
